@@ -1,1 +1,16 @@
+name: "Hello World Demo"
 
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    hello_world:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Hello World Step"
+              run:  echo "Hello my dear friends, I'm alive!!"
+
+            - name: "Steps Number 2"
+              run: echo "Me secondncommand has also run! Now my workflow will END!! HURRAYYY, It was exciting."
